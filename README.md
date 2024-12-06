@@ -1,4 +1,5 @@
 # 3D Solar System built with Three.js
+![screenshot](https://github.com/Ahmad3366/solar_system/blob/main/public/screenshot.png)
 
 This project showcases a basic 3D representation of our solar system using the powerful Three.js library. Explore the sun, planets, and experience the wonder of space in your browser!
 
