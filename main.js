@@ -17,18 +17,42 @@ const orbitControls = new OrbitControls(camera, renderer.domElement)
 
 const texLoader = new THREE.TextureLoader()
 
-const sunTex = texLoader.load('sun.jpg')
-const earthTex = texLoader.load('earth.jpg')
-const marsTex = texLoader.load('mars.jpg')
-const mercuryTex = texLoader.load('mercury.jpg')
-const neptuneTex = texLoader.load('neptune.jpg')
-const plutoTex = texLoader.load('pluto.jpg')
-const saturnTex = texLoader.load('saturn.jpg')
-const saturnRingTex = texLoader.load('saturn_ring.png')
-const uranusTex = texLoader.load('uranus.jpg')
-const venusTex = texLoader.load('venus.jpg')
-const jupiterTex = texLoader.load('jupiter.jpg')
-const uranusRingTex = texLoader.load('uranus_ring.png')
+const sunTex = texLoader.load('sun.jpg', function(map) {
+	map.colorSpace = THREE.SRGBColorSpace
+})
+const earthTex = texLoader.load('earth.jpg', function(map) {
+	map.colorSpace = THREE.SRGBColorSpace
+})
+const marsTex = texLoader.load('mars.jpg', function(map) {
+	map.colorSpace = THREE.SRGBColorSpace
+})
+const mercuryTex = texLoader.load('mercury.jpg', function(map) {
+	map.colorSpace = THREE.SRGBColorSpace
+})
+const neptuneTex = texLoader.load('neptune.jpg', function(map) {
+	map.colorSpace = THREE.SRGBColorSpace
+})
+const plutoTex = texLoader.load('pluto.jpg', function(map) {
+	map.colorSpace = THREE.SRGBColorSpace
+})
+const saturnTex = texLoader.load('saturn.jpg', function(map) {
+	map.colorSpace = THREE.SRGBColorSpace
+})
+const saturnRingTex = texLoader.load('saturn_ring.png', function(map) {
+	map.colorSpace = THREE.SRGBColorSpace
+})
+const uranusTex = texLoader.load('uranus.jpg', function(map) {
+	map.colorSpace = THREE.SRGBColorSpace
+})
+const venusTex = texLoader.load('venus.jpg', function(map) {
+	map.colorSpace = THREE.SRGBColorSpace
+})
+const jupiterTex = texLoader.load('jupiter.jpg', function(map) {
+	map.colorSpace = THREE.SRGBColorSpace
+})
+const uranusRingTex = texLoader.load('uranus_ring.png', function(map) {
+	map.colorSpace = THREE.SRGBColorSpace
+})
 
 
 const cubeTexLoader = new THREE.CubeTextureLoader()
